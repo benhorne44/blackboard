@@ -45,16 +45,10 @@ public class BasicArrays {
     }
 
     public void bubbleSort(Place[] places) {
-
+        
     }
 
     public void selectionSort(Place[] places) {
 
-    }
-
-    private void swap(Place[] places, int one, int two) {
-        Place tempPlace = places[one];
-        places[one] = places[two];
-        places[two] = tempPlace;
     }
 }
