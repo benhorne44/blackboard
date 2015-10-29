@@ -35,6 +35,12 @@ public class BasicArrays {
         System.out.println("Sadface... Unless this class calls this method it will never be used.");
     }
 
+    /* Please use brackets! In the book examples they tend to put everything
+    *  in 1 line after a for loop or if statement and do not encapsulate it in
+    *  brackets. This is technically correct code but is not typically something
+    *  we practice. Here is an iOS bug where a developer did not use brackets
+    *  http://embeddedgurus.com/barr-code/2014/03/apples-gotofail-ssl-security-bug-was-easily-preventable/
+    */
     public void incrementExample() {
         for(int i = 0; i < 5; i++) {
             incrementInAllForLoops++;
