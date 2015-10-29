@@ -78,13 +78,23 @@ public class BasicArrays {
         }
     }
 
+    public void insertionSort(Place[] places) {
+        for (int out = 1; out < places.length; out++) {
+            incrementInAllLoops++;
+            Place tempPlace = places[out];
+            int in = out;
+            while ( in > 0 && places[in-1].getDistance() >= tempPlace.getDistance()) {
+                incrementInAllLoops++;
+                places[in] = places[in-1];
+                --in;
+                places[in] = tempPlace;
+            }
+        }
+    }
+
     private void swap(Place[] places, int one, int two) {
         Place tempPlace = places[one];
         places[one] = places[two];
         places[two] = tempPlace;
-    }
-
-    public void insertionSort(Place[] places) {
-        
     }
 }
