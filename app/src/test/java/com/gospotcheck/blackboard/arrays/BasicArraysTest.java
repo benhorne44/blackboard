@@ -71,7 +71,7 @@ public class BasicArraysTest {
         basicArrays.insertionSort(places);
 
         assertThatPlacesAreInOrderByDistance();
-        assertThat(basicArrays.getIncrementInAllLoops()).isEqualTo(30);
+        assertThat(basicArrays.getIncrementInAllLoops()).isEqualTo(16);
     }
 
     private void assertThatPlacesAreInOrderByDistance() {
