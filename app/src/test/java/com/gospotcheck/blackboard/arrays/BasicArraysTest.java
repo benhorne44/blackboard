@@ -45,9 +45,9 @@ public class BasicArraysTest {
     }
 
     @Test
-    public void incrementExample_showsHowToIncrementInside2ForLoops() throws Exception {
+    public void incrementExample_showsHowToIncrementInside2Loops() throws Exception {
         basicArrays.incrementExample();
-        assertThat(basicArrays.getIncrementInAllForLoops()).isEqualTo(30);
+        assertThat(basicArrays.getIncrementInAllLoops()).isEqualTo(30);
     }
 
     @Test
@@ -55,7 +55,7 @@ public class BasicArraysTest {
         basicArrays.bubbleSort(places);
 
         assertThatPlacesAreInOrderByDistance();
-        assertThat(basicArrays.getIncrementInAllForLoops()).isEqualTo(25);
+        assertThat(basicArrays.getIncrementInAllLoops()).isEqualTo(25);
     }
 
     @Test
@@ -63,7 +63,7 @@ public class BasicArraysTest {
         basicArrays.selectionSort(places);
 
         assertThatPlacesAreInOrderByDistance();
-        assertThat(basicArrays.getIncrementInAllForLoops()).isEqualTo(27);
+        assertThat(basicArrays.getIncrementInAllLoops()).isEqualTo(27);
     }
 
     private void assertThatPlacesAreInOrderByDistance() {

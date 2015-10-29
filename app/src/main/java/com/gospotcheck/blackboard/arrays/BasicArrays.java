@@ -5,14 +5,14 @@ import com.gospotcheck.blackboard.gscobjects.Place;
 
 public class BasicArrays {
 
-    private int incrementInAllForLoops;
+    private int incrementInAllLoops;
 
     public BasicArrays() {
-        incrementInAllForLoops = 0;
+        incrementInAllLoops = 0;
     }
 
-    public int getIncrementInAllForLoops(){
-        return incrementInAllForLoops;
+    public int getIncrementInAllLoops(){
+        return incrementInAllLoops;
     }
 
     /* The basic for loop
@@ -43,9 +43,11 @@ public class BasicArrays {
     */
     public void incrementExample() {
         for(int i = 0; i < 5; i++) {
-            incrementInAllForLoops++;
-            for (int n = 0; n < 5; n++) {
-                incrementInAllForLoops++;
+            incrementInAllLoops++;
+            int n = 0;
+            while(n < 5) {
+                incrementInAllLoops++;
+                n++;
             }
         }
     }
