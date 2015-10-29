@@ -59,4 +59,8 @@ public class BasicArrays {
     public void selectionSort(Place[] places) {
 
     }
+
+    public void insertionSort(Place[] places) {
+        
+    }
 }
