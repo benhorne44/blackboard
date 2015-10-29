@@ -54,9 +54,9 @@ public class BasicArrays {
 
     public void bubbleSort(Place[] places) {
         for(int out = places.length - 1; out > 1; out--) {
-            incrementInAllForLoops++;
+            incrementInAllLoops++;
             for ( int in = 0; in < out; in++) {
-                incrementInAllForLoops++;
+                incrementInAllLoops++;
                 if (places[in].getDistance() > places[in+1].getDistance() ) {
                     swap(places, in, in+1);
                 }
@@ -66,10 +66,10 @@ public class BasicArrays {
 
     public void selectionSort(Place[] places) {
         for(int out = 0; out < places.length - 1; out++) {
-            incrementInAllForLoops++;
+            incrementInAllLoops++;
             int min = out;
             for(int in = out + 1; in < places.length; in++) {
-                incrementInAllForLoops++;
+                incrementInAllLoops++;
                 if (places[in].getDistance() < places[min].getDistance()) {
                     min = in;
                 }
