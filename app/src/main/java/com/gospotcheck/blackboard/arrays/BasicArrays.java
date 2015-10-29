@@ -83,4 +83,8 @@ public class BasicArrays {
         places[one] = places[two];
         places[two] = tempPlace;
     }
+
+    public void insertionSort(Place[] places) {
+        
+    }
 }

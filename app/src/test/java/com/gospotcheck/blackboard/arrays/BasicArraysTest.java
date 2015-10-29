@@ -66,6 +66,14 @@ public class BasicArraysTest {
         assertThat(basicArrays.getIncrementInAllLoops()).isEqualTo(27);
     }
 
+    @Test
+    public void insertionSort_sortsAnArrayUsingSelectionSort() throws Exception {
+        basicArrays.insertionSort(places);
+
+        assertThatPlacesAreInOrderByDistance();
+        assertThat(basicArrays.getIncrementInAllLoops()).isEqualTo(30);
+    }
+
     private void assertThatPlacesAreInOrderByDistance() {
         assertThat(places[0].getDistance()).isEqualTo(place5.getDistance());
         assertThat(places[1].getDistance()).isEqualTo(place3.getDistance());
